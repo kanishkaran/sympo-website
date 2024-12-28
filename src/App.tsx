@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import EventDetail from './pages/EventDetail';
 import Workshop from './pages/Workshop';
+import About from './pages/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/events/:id" element={<EventDetail />} />
             <Route path="/workshop" element={<Workshop />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />

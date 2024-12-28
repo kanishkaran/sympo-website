@@ -1,54 +1,74 @@
-import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Users } from 'lucide-react';
-import CountdownTimer from '../components/CountdownTimer';
-import Logo from '../assets/logo.png';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Calendar, MapPin, Users } from "lucide-react";
+import CountdownTimer from "../components/CountdownTimer";
+import Spline from "@splinetool/react-spline";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div 
-        className="h-screen relative flex items-center justify-center bg-hero-gradient"
-        
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-blue/50 to-blue opacity-75"></div>
-        <div className="relative text-center px-4">
-          <img 
-            src={Logo} 
-            alt="Event Logo" 
-            className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-8 md:mb-12" 
+      <div className="h-screen relative">
+        {isMobile ? (
+          // Mobile Background - iFrame
+          <iframe
+            src="https://my.spline.design/nexbotrobotcharacterconceptcopy-b9259dae394e57f9a721ca3edfa100fe/"
+            width="100%"
+            height="100%"
+            className="absolute inset-0 w-full h-full"
+          ></iframe>
+        ) : (
+          // Desktop Background - Spline
+          <Spline
+            scene="https://prod.spline.design/8oUDB3Qzbwj9cCKL/scene.splinecode"
+            className="absolute inset-0 w-full h-full"
           />
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-white to-yellow-500 mb-6">
-            COGNEBULA'25
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 md:mb-8">
-            National Level Technical Symposium
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mb-6 md:mb-8">
-            <div className="flex items-center text-white text-sm md:text-base">
-              <Calendar className="mr-2 w-4 h-4 md:w-6 md:h-6" />
-              <span>Feb 15, 2025</span>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue/50 opacity-75"></div>
+        <div className="absolute bottom-16 w-full text-center px-4">
+          <div className="flex flex-col items-center mb-12 md:mb-16">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mb-6 md:mb-8">
+              <div className="bg-black/50 backdrop-blur-sm p-4 rounded-md flex items-center text-white text-sm md:text-base shadow-lg">
+                <Calendar className="mr-2 w-4 h-4 md:w-6 md:h-6" />
+                <span>Feb 15, 2025</span>
+              </div>
+              <div className="bg-black/50 backdrop-blur-sm p-4 rounded-md flex items-center text-white text-sm md:text-base shadow-lg">
+                <MapPin className="mr-2 w-4 h-4 md:w-6 md:h-6" />
+                <span>Department of AI & DS</span>
+              </div>
+              <div className="bg-black/50 backdrop-blur-sm p-4 rounded-md flex items-center text-white text-sm md:text-base shadow-lg">
+                <Users className="mr-2 w-4 h-4 md:w-6 md:h-6" />
+                <span>500+ Participants</span>
+              </div>
             </div>
-            <div className="flex items-center text-white text-sm md:text-base">
-              <MapPin className="mr-2 w-4 h-4 md:w-6 md:h-6" />
-              <span>Department of AI & DS</span>
+            <div className="mb-6 md:mb-8">
+              <CountdownTimer />
             </div>
-            <div className="flex items-center text-white text-sm md:text-base">
-              <Users className="mr-2 w-4 h-4 md:w-6 md:h-6" />
-              <span>500+ Participants</span>
-            </div>
+            <button
+              onClick={() => window.open("https://your-google-form-url-here", "_blank")}
+              className="bg-gradient-to-r from-blue-500 to-yellow-500 text-navy px-6 py-2 sm:px-8 sm:py-3 rounded-md font-bold text-sm sm:text-lg hover:opacity-90 transition shadow-lg"
+            >
+              Register Now
+            </button>
           </div>
-          <div className="mb-6 md:mb-8">
-            <CountdownTimer />
-          </div>
-          <button 
-            onClick={() => window.open("https://your-google-form-url-here", "_blank")} 
-            className="bg-gradient-to-r from-blue-500 to-yellow-500 text-navy px-6 py-2 sm:px-8 sm:py-3 rounded-md font-bold text-sm sm:text-lg hover:opacity-90 transition shadow-lg"
-          >
-            Register Now
-          </button>
         </div>
       </div>
+
 
       {/* Events Preview */}
       <div className="py-12 md:py-16 bg-light-gradient">
