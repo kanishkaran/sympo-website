@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 interface TimeLeft {
@@ -37,19 +37,19 @@ const CountdownTimer = () => {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="flex flex-wrap justify-center gap-8"
+      className="flex flex-wrap justify-center gap-4 sm:gap-8"
     >
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div key={unit} className="text-center">
           <motion.div 
-            className="w-20 h-20 sm:w-24 sm:h-24 bg-black/40 backdrop-blur-sm rounded-lg flex items-center justify-center mb-2"
+            className="w-16 h-16 sm:w-24 sm:h-24 bg-black/40 backdrop-blur-sm rounded-lg flex items-center justify-center mb-2"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-500 via-black to-yellow-500 bg-clip-text text-transparent">
+            <span className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-blue-500 via-black to-yellow-500 bg-clip-text text-transparent">
               {value.toString().padStart(2, '0')}
             </span>
           </motion.div>
-          <p className="text-gray-400 capitalize">{unit}</p>
+          <p className="text-gray-400 text-xs sm:text-sm capitalize">{unit}</p>
         </div>
       ))}
     </motion.div>

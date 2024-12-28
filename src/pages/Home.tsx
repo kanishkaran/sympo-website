@@ -43,16 +43,16 @@ export default function Home() {
         <div className="absolute bottom-16 w-full text-center px-4">
           <div className="flex flex-col items-center mb-12 md:mb-16">
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mb-6 md:mb-8">
-              <div className="bg-black/50 backdrop-blur-sm p-4 rounded-md flex items-center text-white text-sm md:text-base shadow-lg">
-                <Calendar className="mr-2 w-4 h-4 md:w-6 md:h-6" />
+              <div className="bg-black/50 backdrop-blur-sm p-3 sm:p-4 rounded-md flex items-center text-white text-xs sm:text-sm md:text-base shadow-lg">
+                <Calendar className="mr-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
                 <span>Feb 15, 2025</span>
               </div>
-              <div className="bg-black/50 backdrop-blur-sm p-4 rounded-md flex items-center text-white text-sm md:text-base shadow-lg">
-                <MapPin className="mr-2 w-4 h-4 md:w-6 md:h-6" />
+              <div className="bg-black/50 backdrop-blur-sm p-3 sm:p-4 rounded-md flex items-center text-white text-xs sm:text-sm md:text-base shadow-lg">
+                <MapPin className="mr-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
                 <span>Department of AI & DS</span>
               </div>
-              <div className="bg-black/50 backdrop-blur-sm p-4 rounded-md flex items-center text-white text-sm md:text-base shadow-lg">
-                <Users className="mr-2 w-4 h-4 md:w-6 md:h-6" />
+              <div className="bg-black/50 backdrop-blur-sm p-3 sm:p-4 rounded-md flex items-center text-white text-xs sm:text-sm md:text-base shadow-lg">
+                <Users className="mr-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6" />
                 <span>500+ Participants</span>
               </div>
             </div>
