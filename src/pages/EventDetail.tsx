@@ -20,7 +20,7 @@ export default function EventDetail() {
       gsap.fromTo(
         eventWrapperRef.current,
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1.2, ease: "power4.out" }
+        { opacity: 1, y: 0, duration: 1.2, ease: 'power4.out' }
       );
     }
 
@@ -32,18 +32,18 @@ export default function EventDetail() {
           opacity: 0,
           x: -100,
           rotation: -10,
-          transformOrigin: "left center"
+          transformOrigin: 'left center'
         },
         {
           opacity: 1,
           x: 0,
           rotation: 0,
           duration: 1.2,
-          ease: "power4.out",
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: eventTitleRef.current,
-            start: "top center",
-            end: "bottom top",
+            start: 'top center',
+            end: 'bottom top',
             scrub: true,
             markers: false
           }
@@ -57,7 +57,7 @@ export default function EventDetail() {
         gsap.fromTo(
           slot,
           { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.6, delay: index * 0.2, ease: "power4.out" }
+          { opacity: 1, y: 0, duration: 0.6, delay: index * 0.2, ease: 'power4.out' }
         );
       }
     });
@@ -102,7 +102,7 @@ export default function EventDetail() {
                 <div
                   key={index}
                   className="flex items-center space-x-3"
-                  ref={(el) => (slotRefs.current[index] = el)} // Assign ref to each slot element
+                  ref={(el) => (slotRefs.current[index] = el)}
                 >
                   <Clock
                     className={`w-6 h-6 ${
@@ -140,6 +140,20 @@ export default function EventDetail() {
               ))}
             </div>
           </div>
+
+          {/* Responsive Join Button */}
+            <div className="mt-8">
+              <button
+                onClick={() => window.open('https://forms.gle/your-google-form-link', '_blank')}
+                className="w-full py-3 px-6 rounded-lg text-lg font-semibold text-white 
+                          bg-gradient-to-r from-blue-500 to-blue-700 
+                          hover:from-blue-600 hover:to-blue-800 
+                          transition duration-300"
+              >
+                Join Event
+              </button>
+            </div>
+
         </div>
       </div>
     </div>

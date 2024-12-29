@@ -1,10 +1,19 @@
-import  { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { events } from '../data/events';
 import EventCard from '../components/EventCard';
 import EventFilter from '../components/EventFilter';
 
 export default function Events() {
   const [activeFilter, setActiveFilter] = useState('all');
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const filter = searchParams.get('filter');
+    if (filter) {
+      setActiveFilter(filter);
+    }
+  }, [searchParams]);
 
   const filteredEvents = events.filter(
     event => activeFilter === 'all' || event.type === activeFilter

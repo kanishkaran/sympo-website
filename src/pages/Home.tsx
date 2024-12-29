@@ -26,16 +26,14 @@ export default function Home() {
       <div className="h-screen relative">
         {isMobile ? (
           // Mobile Background - iFrame
-          <iframe
-            src="https://my.spline.design/nexbotrobotcharacterconceptcopy-b9259dae394e57f9a721ca3edfa100fe/"
-            width="100%"
-            height="100%"
+          <Spline
+            scene="https://prod.spline.design/8oUDB3Qzbwj9cCKL/scene.splinecode"
             className="absolute inset-0 w-full h-full"
-          ></iframe>
+          />
         ) : (
           // Desktop Background - Spline
           <Spline
-            scene="https://prod.spline.design/8oUDB3Qzbwj9cCKL/scene.splinecode"
+            scene="https://prod.spline.design/8kGDuZ0OhZHtHhrw/scene.splinecode"
             className="absolute inset-0 w-full h-full"
           />
         )}
@@ -84,7 +82,10 @@ export default function Home() {
               <p className="text-sm sm:text-base mb-4">
                 Showcase your technical prowess in our cutting-edge competitions.
               </p>
-              <Link to="/events" className="text-gold hover:text-gold-light text-sm sm:text-base">
+              <Link 
+              to="/events?filter=technical" 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-gold hover:text-gold-light text-sm sm:text-base">
                 Learn more →
               </Link>
             </div>
@@ -95,7 +96,10 @@ export default function Home() {
               <p className="text-sm sm:text-base mb-4">
                 Participate in fun and engaging activities beyond technology.
               </p>
-              <Link to="/events" className="text-gold hover:text-gold-light text-sm sm:text-base">
+              <Link 
+              to="/events?filter=non-technical"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+              className="text-gold hover:text-gold-light text-sm sm:text-base">
                 Learn more →
               </Link>
             </div>
@@ -106,7 +110,10 @@ export default function Home() {
               <p className="text-sm sm:text-base mb-4">
                 Learn from industry experts in our intensive workshop sessions.
               </p>
-              <Link to="/events" className="text-gold hover:text-gold-light text-sm sm:text-base">
+              <Link 
+              to="/events?filter=workshop" 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-gold hover:text-gold-light text-sm sm:text-base">
                 Learn more →
               </Link>
             </div>
