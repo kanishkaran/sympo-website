@@ -1,104 +1,147 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Clock, Book, Award, Users, Calendar, MapPin } from 'lucide-react';
-import { events } from '../data/events';
+import { motion } from 'framer-motion';
+import WorkshopCard from '../components/WorkshopCard';
+import { Book, Code, Brain, Laptop } from 'lucide-react';
 
 export default function Workshop() {
-  const workshop = events.find(event => event.type === 'workshop');
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
 
-  if (!workshop) return null;
-
-  const schedule = [
-    { time: '09:00 AM', topic: 'Introduction to Advanced ML Concepts' },
-    { time: '10:30 AM', topic: 'Hands-on Session: Model Building' },
-    { time: '01:00 PM', topic: 'Lunch Break' },
-    { time: '02:00 PM', topic: 'Advanced Topics and Best Practices' },
-    { time: '04:00 PM', topic: 'Project Implementation' },
-    { time: '05:30 PM', topic: 'Q&A and Wrap-up' }
-  ];
+  const speaker = {
+    name: 'Prasana Kumar Parthasarathy',
+    organization: 'Capco',
+    presentationTitle: 'From Data Foundations to AI Elevations: Building Future Together',
+  };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Hero Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-navy mb-4">{workshop.title}</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">{workshop.description}</p>
-          <div className="flex flex-wrap justify-center gap-6 text-gray-600">
-            <div className="flex items-center">
-              <Calendar className="w-5 h-5 mr-2 text-gold" />
-              <span>March 16, 2025</span>
-            </div>
-            <div className="flex items-center">
-              <MapPin className="w-5 h-5 mr-2 text-gold" />
-              <span>AI & DS Department Lab</span>
-            </div>
-          </div>
-        </div>
+    <div className="min-h-screen flex flex-col pt-24 px-4 bg-gradient-to-br from-navy via-navy-light to-navy">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gold-gradient">
+          From Data Foundations to AI Elevations: Building Future Together
+          </h1>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            Join us for an immersive workshop on cutting-edge AI and Machine Learning technologies,
+            led by industry experts from top tech companies.
+          </p>
+        </motion.div>
 
-        {/* Key Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <Clock className="w-8 h-8 text-gold mb-4" />
-            <h3 className="font-semibold text-navy mb-2">Duration</h3>
-            <p className="text-gray-600">Full-day Workshop</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <Book className="w-8 h-8 text-gold mb-4" />
-            <h3 className="font-semibold text-navy mb-2">Prerequisites</h3>
-            <p className="text-gray-600">Basic Python & ML Knowledge</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <Award className="w-8 h-8 text-gold mb-4" />
-            <h3 className="font-semibold text-navy mb-2">Certificate</h3>
-            <p className="text-gray-600">Industry-Recognized</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <Users className="w-8 h-8 text-gold mb-4" />
-            <h3 className="font-semibold text-navy mb-2">Seats</h3>
-            <p className="text-gray-600">Limited to 50 participants</p>
-          </div>
-        </div>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionVariants}
+        >
+          <WorkshopCard
+            title="AI Masterclass"
+            date="Feb 15, 2025"
+            time="1:00 PM - 3:00 PM"
+            capacity="Limited participants"
+            description="Master the fundamentals of deep learning with hands-on experience in PyTorch. Build and deploy real-world AI applications with industry-standard practices."
+            imageUrl="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80"
+          />
+          
+          <div className="space-y-6">
+            <motion.div 
+              className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-gold/30"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <h3 className="text-xl font-bold mb-4 text-gold">{speaker.name}</h3>
+              <p className="text-white/90">Organization: {speaker.organization}</p>
+              
+            </motion.div>
+            <motion.div 
+              className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-gold/30"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <h3 className="text-xl font-bold mb-4 text-gold">What You'll Learn</h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  { icon: Brain, text: 'Neural Networks' },
+                  { icon: Code, text: 'PyTorch Implementation' },
+                  { icon: Laptop, text: 'Model Deployment' },
+                  { icon: Book, text: 'Best Practices' }
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-white/90">
+                    <item.icon className="w-5 h-5 mr-2 text-gold" />
+                    <span>{item.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
-        {/* Schedule */}
-        <div className="bg-white rounded-lg shadow-md p-8 mb-12">
-          <h2 className="text-2xl font-bold text-navy mb-6">Workshop Schedule</h2>
-          <div className="space-y-4">
-            {schedule.map((item, index) => (
-              <div key={index} className="flex items-start">
-                <div className="w-24 flex-shrink-0">
-                  <span className="text-gold font-semibold">{item.time}</span>
-                </div>
-                <div className="flex-grow">
-                  <p className="text-gray-600">{item.topic}</p>
-                </div>
-              </div>
-            ))}
           </div>
-        </div>
+        </motion.div>
 
-        {/* Coordinators */}
-        <div className="bg-white rounded-lg shadow-md p-8 mb-12">
-          <h2 className="text-2xl font-bold text-navy mb-6">Workshop Coordinators</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {workshop.coordinators.map((coordinator, index) => (
-              <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-navy">{coordinator.name}</h3>
-                <p className="text-sm text-gray-600">{coordinator.phone}</p>
-              </div>
-            ))}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionVariants}
+        >
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-gold/30">
+            <h3 className="text-xl font-bold mb-4 text-gold">Prerequisites</h3>
+            <ul className="space-y-3 text-white/90">
+              <li className="flex items-center">
+                <Code className="w-5 h-5 mr-2 text-gold" />
+                Basic Python Programming
+              </li>
+              <li className="flex items-center">
+                <Brain className="w-5 h-5 mr-2 text-gold" />
+                Understanding of ML Fundamentals
+              </li>
+              <li className="flex items-center">
+                <Laptop className="w-5 h-5 mr-2 text-gold" />
+                Laptop - Optional
+              </li>
+            </ul>
           </div>
-        </div>
 
-        {/* Register Button */}
-        <div className="text-center">
-          <Link
-            to="/register"
-            className="inline-block bg-gold text-navy px-8 py-3 rounded-md font-bold text-lg hover:bg-gold-light transition"
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-gold/30">
+            <h3 className="text-xl font-bold mb-4 text-gold">What We Provide</h3>
+            <ul className="space-y-3 text-white/90">
+              <li className="flex items-center">
+                <Book className="w-5 h-5 mr-2 text-gold" />
+                Comprehensive Workshop Materials
+              </li>
+              <li className="flex items-center">
+                <Code className="w-5 h-5 mr-2 text-gold" />
+                In-depth Knowlegde
+              </li>
+              <li className="flex items-center">
+                <Brain className="w-5 h-5 mr-2 text-gold" />
+                Certificate of Completion
+              </li>
+            </ul>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="text-center mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionVariants}
+        >
+          <button
+            onClick={() => window.open("https://your-google-form-url-here", "_blank")}
+            className="inline-block bg-gradient-to-r from-gold to-gold-light text-navy px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity shadow-lg"
           >
             Register for Workshop
-          </Link>
-        </div>
+          </button>
+          <p className="text-white/70 mt-4">
+            Limited seats available. Early bird registrations get special benefits!
+          </p>
+        </motion.div>
       </div>
     </div>
   );

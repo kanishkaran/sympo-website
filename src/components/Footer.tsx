@@ -3,25 +3,25 @@ export default function Footer() {
     {
       name: 'Charan',
       role: 'Student Coordinator',
-      phone: '+91 9876543210',
+      phone: '+91 99949 23310',
       email: 'xyz@gmail.com'
     },
     {
       name: 'Jasmine',
       role: 'Student Coordinator',
-      phone: '+91 9876543211',
+      phone: '+91 79045 23860',
       email: 'xyz@gmail.com'
     },
     {
       name: 'Kanishkaran',
       role: 'Student Coordinator',
-      phone: '+91 9876543212',
+      phone: '+91 63745 38518',
       email: 'xyz@gmail.com'
     },
     {
       name: 'Keerthana',
       role: 'Student Coordinator',
-      phone: '+91 9876543213',
+      phone: '+91 88387 86784',
       email: 'xyz@gmail.com'
     }
   ];
