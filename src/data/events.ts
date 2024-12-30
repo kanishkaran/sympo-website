@@ -102,22 +102,28 @@ export const events: Event[] = [
     slots: ['10:00 AM - 11:30 AM', '1:00 PM - 2:30 PM'],
   },
   {
-    id: 'ml-workshop',
-    title: 'Machine Learning Workshop',
-    description: 'Hands-on workshop on advanced ML techniques with industry experts.',
+    id: 'workshop',
+    title: 'From Foundations of Data to AI Elevation',
+    description: 'Hands-on workshop on advanced AI techniques with industry experts.',
     type: 'workshop',
     rules: [
-      'Basic Python knowledge required',
-      'Laptop with minimum 8GB RAM',
+      'Basic Python knowledge ',
+      'Laptop optional',
       'Pre-installation guide will be shared',
-      'Certificate provided'
+      'Certificate provided',
+      'Know more on workshop page.'
     ],
     coordinators: [
       {
-        name: 'xyz',
-        phone: '+91 9876543216',
+        name: 'Barath P R',
+        phone: '+91 80158 92417',
+      },
+      {
+        name: 'Prabhakar V',
+        phone: '+91 97905 46103',
       }
-    ]
+    ],
+    slots: ['1:00 PM - 3:00 PM']
   },
   {
     id: "IPL-Auction",
@@ -187,7 +193,7 @@ export const events: Event[] = [
   },
   {
     id: "Spotlight",
-    title: "Spotlight - The ADventure Time",
+    title: "Spotlight - The Adventure Time",
     description:
       "Showcase your creativity and humor in two fun-filled rounds of innovative advertising!",
     rules: [

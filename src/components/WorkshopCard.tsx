@@ -7,6 +7,10 @@ interface WorkshopCardProps {
   capacity: string;
   description: string;
   imageUrl: string;
+  speaker: {
+    name: string;
+    organization: string;
+  };
 }
 
 export default function WorkshopCard({
@@ -16,6 +20,7 @@ export default function WorkshopCard({
   capacity,
   description,
   imageUrl,
+  speaker,
 }: WorkshopCardProps) {
   return (
     <div className="bg-white/30 backdrop-blur-md rounded-xl overflow-hidden border border-gold">
@@ -41,7 +46,12 @@ export default function WorkshopCard({
             <span>{capacity}</span>
           </div>
         </div>
-        <p className="text-white/90">{description}</p>
+        <p className="text-white/90 mb-4">{description}</p>
+        <div className="text-white/90">
+          <p className="font-bold">Speaker:</p>
+          <p>{speaker.name}</p>
+          <p className="italic text-gold">{speaker.organization}</p>
+        </div>
       </div>
     </div>
   );
