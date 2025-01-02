@@ -57,8 +57,8 @@ export default function Navbar() {
               to="/"
               className={`text-xl md:text-3xl font-bold ${
                 isScrolled
-                ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-white to-yellow-500"
-                : "text-black"
+                  ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-white to-yellow-500"
+                  : "text-black"
               }`}
             >
               COGNEBULA'25
@@ -98,6 +98,14 @@ export default function Navbar() {
               }`}
             >
               About
+            </Link>
+            <Link
+              to="/credits"
+              className={`hover:text-gold transition text-sm lg:text-base ${
+                isScrolled ? "text-white" : "text-black"
+              }`}
+            >
+              Credits
             </Link>
             <button
               onClick={() => window.open("https://your-google-form-url-here", "_blank")}
@@ -161,6 +169,13 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             About
+          </Link>
+          <Link
+            to="/credits"
+            className="block text-white hover:text-gold text-sm"
+            onClick={() => setIsOpen(false)}
+          >
+            Credits
           </Link>
           <button
             onClick={() => {

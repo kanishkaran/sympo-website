@@ -4,7 +4,7 @@ export default function About() {
     <div className="min-h-screen bg-gradient-to-b from-navy to-blue-900 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8">
-          About <span className="text-blue-400">Cognebula '25</span>
+          About <span className="text-blue-400">COGNEBULA '25</span>
         </h1>
         <div className="space-y-6 sm:space-y-8 text-center">
           {/* Introduction Section */}
