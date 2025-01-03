@@ -47,7 +47,7 @@ export const events: Event[] = [
       'Team up with a friend to solve problems while swapping roles at regular intervals — only one codes at a time, with the final collaboration allowing both to code together!',
     rules: [
       'Team size: 2 members',
-      'Platform: Conducted on a competitive coding platform (TBA; account required for registration).',
+      'Platform: Conducted on a competitive coding platform (Hackerrank; account required for registration).',
       'Coding & Idle Roles: One teammate codes while the other sits idle/work it out on paper (no talking between members until the last swap).',
       'Roles swap every 10 minutes (4 swaps in total).',
       'Final Collaboration: For the last swap, both teammates can communicate and code together.',
@@ -72,7 +72,7 @@ export const events: Event[] = [
       'Strictly no external resources allowed.',
       'Misconduct leads to disqualification.',
       'Prizes for winners who crack the case fastest and most efficiently!',
-      'Coordinators\' decisions are final.',
+      'Coordinators decisions are final.',
     ],
     coordinators: [
       { name: 'Ranjith Kumar R', phone: '+91 6380875936' },
@@ -103,7 +103,7 @@ export const events: Event[] = [
   },
   {
     id: 'workshop',
-    title: 'From Foundations of Data to AI Elevation',
+    title: 'From Data Foundations to AI Elevation',
     description: 'Hands-on workshop on advanced AI techniques with industry experts.',
     type: 'workshop',
     rules: [
@@ -127,7 +127,7 @@ export const events: Event[] = [
   },
   {
     id: "IPL-Auction",
-    title: "Pitch Perfect  The Bidding Edition",
+    title: "Pitch Perfect - The Bidding Edition",
     description:"Experience cricket trivia and strategy in an electrifying IPL auction showdown event!",
     rules: [
       "This event contains 2 rounds: 1. Quiz 2. Auction",
@@ -179,6 +179,9 @@ export const events: Event[] = [
       "A musical showdown featuring three exciting rounds of creativity, teamwork, and quick thinking!",
     rules: [
       "Teams must consist of 2-3 members.",
+      "Round 1: Flip the Tune - Guess reversed songs in 30 seconds. No external help or team-to-team communication allowed in all rounds.",
+      "Round 2: Mimic Mania - Act out songs using gestures, no speaking. Teams guess based on actions; 1 minute per song.",
+      "Round 3: Snap & Guess - Arrange images to depict songs in 2 minutes.",
       "Points are awarded based on accuracy and speed in guessing.",
       "No direct verbal clues or humming is allowed unless specified.",
       "Judges' decisions are final.",
@@ -193,7 +196,7 @@ export const events: Event[] = [
   },
   {
     id: "Spotlight",
-    title: "Spotlight - The Adventure Time",
+    title: "Spotlight - The ADventure Time",
     description:
       "Showcase your creativity and humor in two fun-filled rounds of innovative advertising!",
     rules: [
@@ -216,7 +219,7 @@ export const events: Event[] = [
       { name: "Gowtham.S", phone: "+91 9345713707" },
     ],
     type: "non-technical",
-    slots: ["12:30 PM - 2:00 PM"],
+    slots: ["12:30 PM - 2:30 PM"],
   },
   {
     id: "Recall Quest",
@@ -239,11 +242,11 @@ export const events: Event[] = [
       { name: "Praveen Kumar.S", phone: "+91 9444552899" },
     ],
     type: "non-technical",
-    slots: ["10:00 AM TO 12:00 PM"],
+    slots: ["12:30 PM - 2:30 PM"],
   },
   {
     id: "BGMI",
-    title: "Gaming Galaxy  The Code Blood [BGMI Classic]",
+    title: "Gaming Galaxy - The Code Blood [BGMI Classic]",
     description:
       "Compete in thrilling BGMI matches across Classic and TDM modes to claim victory!",
     rules: [
@@ -260,7 +263,7 @@ export const events: Event[] = [
     ],
     coordinators: [{ name: "Subash", phone: "+91 9884692100" }],
     type: "non-technical",
-    slots: ["12:30 PM to 2:30 PM"],
+    slots: ["10:00 AM to 12:00 PM"],
   },
   {
     id: "FREE FIRE",
@@ -280,6 +283,6 @@ export const events: Event[] = [
     ],
     coordinators: [{ name: "Manish", phone: "+91 9150272747" }],
     type: "non-technical",
-    slots: ["12:30 PM to 2:30 PM"],
+    slots: ["10:00 AM to 12:00 PM"],
   }  
 ];

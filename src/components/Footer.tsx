@@ -1,29 +1,31 @@
+import { YoutubeIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+
 export default function Footer() {
   const coordinators = [
     {
-      name: 'Charan',
-      role: 'Student Coordinator',
-      phone: '+91 99949 23310',
-      email: 'charankesavanm@gmail.com'
+      name: "Charan",
+      role: "Student Coordinator",
+      phone: "+91 99949 23310",
+      email: "charankesavanm@gmail.com",
     },
     {
-      name: 'Jasmine',
-      role: 'Student Coordinator',
-      phone: '+91 79045 23860',
-      email: 'jasminerennita15403@gmail.com'
+      name: "Jasmine",
+      role: "Student Coordinator",
+      phone: "+91 79045 23860",
+      email: "jasminerennita15403@gmail.com",
     },
     {
-      name: 'Kanishkaran',
-      role: 'Student Coordinator',
-      phone: '+91 63745 38518',
-      email: 'kanishkaran456@gmail.com'
+      name: "Kanishkaran",
+      role: "Student Coordinator",
+      phone: "+91 63745 38518",
+      email: "kanishkaran456@gmail.com",
     },
     {
-      name: 'Keerthana',
-      role: 'Student Coordinator',
-      phone: '+91 88387 86784',
-      email: 'keerthanas1200@gmail.com'
-    }
+      name: "Keerthana",
+      role: "Student Coordinator",
+      phone: "+91 88387 86784",
+      email: "keerthanas1200@gmail.com",
+    },
   ];
 
   return (
@@ -58,8 +60,34 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-center mt-8 pt-6 border-t border-gray-700">
-          <p>Velammal Engineering College, Surapet, Chennai</p>
-          <p>&copy; 2025 COGNEBULA. All rights reserved.</p>
+          <div className="flex justify-center space-x-6 mt-4">
+            <a
+              href="https://www.youtube.com/@COGNEBULA2K24"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg hover:scale-110 transition-all"
+            >
+              <YoutubeIcon className="text-white h-10 w-10" />
+            </a>
+            <a
+              href="https://www.instagram.com/cognebula_2k25/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 rounded-full shadow-lg hover:scale-110 transition-all"
+            >
+              <InstagramIcon className="text-white h-10 w-10" />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full shadow-lg hover:scale-110 transition-all"
+              >
+              <LinkedinIcon className="text-navy h-10 w-10" />
+            </a>
+          </div>
+            <p>Velammal Engineering College, Surapet, Chennai</p>
+            <p>&copy; 2025 COGNEBULA. All rights reserved.</p>
         </div>
       </div>
     </footer>

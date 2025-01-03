@@ -11,7 +11,7 @@ export default function About() {
           <p className="text-lg sm:text-xl">
             Welcome to <span className="font-bold text-blue-400">Cognebula '25</span>, 
             the annual symposium hosted by the Department of Artificial Intelligence & Data Science at 
-            <span className="text-blue-300"> Velammmal Engineering College</span>. 
+            <span className="text-blue-300"> Velammal Engineering College</span>. 
             A celebration of technology, innovation, and collaboration, Cognebula is a 
             platform for tech enthusiasts, innovators, and dreamers.
           </p>

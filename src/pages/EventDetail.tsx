@@ -15,6 +15,9 @@ export default function EventDetail() {
 
   // Animations with GSAP
   useEffect(() => {
+    // Scroll to top on component mount
+    window.scrollTo(0, 0);
+
     // Animate the event wrapper
     if (eventWrapperRef.current) {
       gsap.fromTo(

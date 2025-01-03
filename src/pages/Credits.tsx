@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Star, Users, ClipboardCheck, Award, Feather } from 'lucide-react';
+import { Star, Users, ClipboardCheck, Award, Feather, PiggyBank } from 'lucide-react';
 
 const generalCredits = [
   {
@@ -32,21 +32,26 @@ const generalCredits = [
     members: ["Prithi Prasanna P", "Gowtham"],
     icon: Feather,
   },
+  {
+    category: "Treasurer",
+    members: ["Prabhakar "],
+    icon: PiggyBank,
+  },
 ];
 
 const committeeCredits = [
-  { committee: "Documentation", members: ["Prithi", "Jasmine"] },
+  { committee: "Documentation", members: ["Prithi Prasanna", "Jasmine"] },
   { committee: "Food", members: ["Aparna"] },
-  { committee: "Registration & Tag Distribution", members: ["Sumisha"] },
+  { committee: "Registration & Tag Distribution", members: ["Sumisha", "Swetha", "Rahul", "Dhanush"] },
   { committee: "Certification", members: ["Dharunikha"] },
   { committee: "Editing", members: ["Dhanushkodi", "Rakesh", "Vishal"] },
   { committee: "Marketing", members: ["Parnika", "Lekha"] },
-  { committee: "Decoration", members: ["Kezia", "Madesh"] },
+  { committee: "Decoration", members: ["Kezia", "Sumisha", "Madesh", "Pranov"] },
   { committee: "Sponsorship", members: ["Pranav G", "Parnika R", "Kezia"] },
-  { committee: "Photography", members: ["Vishal"] },
+  { committee: "Photography", members: ["Vishal Raj"] },
   { committee: "Social Media", members: ["Charan", "Parnika", "Aparna"] },
   { committee: "Hospitality", members: ["Juniors"] },
-  { committee: "Food Stall", members: ["Naveen M"] },
+  { committee: "Stall", members: ["Naveen M"] },
 ];
 
 export default function Credits() {
