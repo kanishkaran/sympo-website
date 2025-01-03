@@ -78,7 +78,7 @@ export default function Footer() {
               <InstagramIcon className="text-white h-10 w-10" />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/cognebula-ai-ds/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full shadow-lg hover:scale-110 transition-all"
