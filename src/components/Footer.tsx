@@ -60,34 +60,34 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-center mt-8 pt-6 border-t border-gray-700">
-          <div className="flex justify-center space-x-6 mt-4">
+          <div className="flex flex-wrap justify-center gap-4 mt-4">
             <a
               href="https://www.youtube.com/@COGNEBULA2K24"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg hover:scale-110 transition-all"
+              className="p-3 sm:p-4 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg hover:scale-110 transition-all"
             >
-              <YoutubeIcon className="text-white h-10 w-10" />
+              <YoutubeIcon className="text-white h-8 w-8 sm:h-10 sm:w-10" />
             </a>
             <a
               href="https://www.instagram.com/cognebula_2k25/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 rounded-full shadow-lg hover:scale-110 transition-all"
+              className="p-3 sm:p-4 bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 rounded-full shadow-lg hover:scale-110 transition-all"
             >
-              <InstagramIcon className="text-white h-10 w-10" />
+              <InstagramIcon className="text-white h-8 w-8 sm:h-10 sm:w-10" />
             </a>
             <a
               href="https://www.linkedin.com/in/cognebula-ai-ds/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full shadow-lg hover:scale-110 transition-all"
-              >
-              <LinkedinIcon className="text-navy h-10 w-10" />
+              className="p-3 sm:p-4 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full shadow-lg hover:scale-110 transition-all"
+            >
+              <LinkedinIcon className="text-navy h-8 w-8 sm:h-10 sm:w-10" />
             </a>
           </div>
-            <p>Velammal Engineering College, Surapet, Chennai</p>
-            <p>&copy; 2025 COGNEBULA. All rights reserved.</p>
+          <p className="mt-4">Velammal Engineering College, Surapet, Chennai</p>
+          <p>&copy; 2025 COGNEBULA. All rights reserved.</p>
         </div>
       </div>
     </footer>

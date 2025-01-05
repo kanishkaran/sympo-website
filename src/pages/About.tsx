@@ -40,7 +40,7 @@ export default function About() {
           {/* Call to Action Section */}
           <div className="flex flex-col items-center">
             <button
-              onClick={() => window.open("https://your-google-form-url-here", "_blank")}
+              onClick={() => window.open("https://shorturl.at/CVF4K", "_blank")}
               className="bg-gradient-to-r from-blue-500 to-yellow-500 text-navy px-6 py-3 rounded-md font-bold text-lg hover:opacity-90 transition shadow-lg"
             >
               Join Us and Be Part of the Innovation

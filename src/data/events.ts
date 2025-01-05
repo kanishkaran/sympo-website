@@ -5,7 +5,7 @@ export const events: Event[] = [
     id: 'paper-presentation',
     title: 'InsightExpo',
     type: 'technical',
-    description: 'Present your research papers / prototype on cutting-edge AI and Data Science topics.',
+    description: 'Present your research papers / prototype on any technology related topics.',
     rules: [
       'Team size: 2-4 members',
       'Time limit: 10 minutes presentation + 5 minutes Q&A',
@@ -17,7 +17,7 @@ export const events: Event[] = [
       { name: 'Naga Arjun', phone: '+91 8825676844' },
       { name: 'Athirai', phone: '+91 8098437659' },
     ],
-    slots: ['10:00 AM - 11:30 AM', '1:00 PM - 2:30 PM'], // Added slot timings
+    slots: ['10:00 AM - 12:00 PM', '1:00 PM - 2:30 PM'], // Added slot timings
   },
   {
     id: 'prompt-craft',
@@ -26,7 +26,7 @@ export const events: Event[] = [
     description:
       'Test your prompt engineering skills in two rounds: generate an image using AI to match a given image and prompt a chatbot to reveal its password!',
     rules: [
-      'Team size: 1-2 members',
+      'Team size: 1 member',
       'Pre-registration required; limited on-spot entries.',
       'Round 1: Prompt an AI to generate an image similar to the given one.',
       'Round 2: Prompt the chatbot to reveal its password.',
@@ -201,18 +201,12 @@ export const events: Event[] = [
       "Showcase your creativity and humor in two fun-filled rounds of innovative advertising!",
     rules: [
       "Each team must consist of 2 to 3 members.",
-      "A random advertisement name will be assigned to each team.",
-      "One member acts out the advertisement without speaking or using props.",
-      "Other members guess the ad name within 1 minute.",
-      "No verbal clues, writing, or drawing is allowed.",
-      "Failing to guess within the time limit results in no points.",
-      "A random product or concept will be assigned to each team.",
-      "Teams have 3 minutes to prepare their advertisement concept.",
-      "The entire team must present the ad.",
-      "Teams have 5 minutes to perform their advertisement.",
-      "Ads may include a tagline, demo/skit, humor, or creativity.",
-      "Points awarded for creativity, presentation, and entertainment.",
-      "Exceeding the time limit results in a point deduction.",
+      "Level 1: Ad Replication - Watch an ad and replicate it accurately, including dialogues, actions, and expressions. Improvised props are allowed.",
+      "Failing to replicate accurately results in no points for the round.",
+      "Level 2: Ad Creation - Create an ad for a random product or concept within 3 minutes. Include creativity, a tagline, and a demo/skit highlighting the product's features and benefits. Entire team participates within 5 minutes.",
+      "Ads may include humor and entertainment to enhance presentation.",
+      "Points are awarded for creativity, presentation, and entertainment.",
+      "Exceeding the time limit results in a point deduction."
     ],
     coordinators: [
       { name: "Jerusha.C.R", phone: "+91 7904665930" },
@@ -227,10 +221,10 @@ export const events: Event[] = [
     description:
       "Challenge your memory and teamwork across three exciting levels in this electrifying quest!",
     rules: [
-      "Each team must have 2 participants.",
+      "Each team must have 2 - 3 participants.",
       "No cheating or use of external aids (e.g., notes, phones). Non-compliance will lead to disqualification.",
       "Level 1: Watch carefully and recall accurately—order matters! In case of a tie, another quick visual challenge will decide.",
-      "Level 2: Listen closely, remember the sequence, and repeat it perfectly. Longer sequences settle ties.",
+      "Level 2: View an image for 30 seconds, then name objects within 1 minute. Avoid repeats or errors—penalties apply! Ties are settled with a new image. Top scores move to the final level.",
       "Level 3: Relay the flashcard sequence with precision and teamwork. Start your arrangement with the Memory Passphrase Challenge!",
       "Winners are decided based on accuracy and time taken.",
       "Players must be fully cooperative with the timers and follow all instructions.",
@@ -251,13 +245,15 @@ export const events: Event[] = [
       "Compete in thrilling BGMI matches across Classic and TDM modes to claim victory!",
     rules: [
       "Account level should be above 25.",
+      "Round 1: Classic Erangel TPP (Duo)",
+      "Round 2: Top 16 from Round 1 (Classic Erangel TPP Duo)",
+      "Round 3: Top 4 teams from Round 2 (TDM)",
       "iPad, Emulator, Tablets are not allowed.",
       "Wi-Fi, Earphones, Power backup will not be provided.",
       "Plugins (Files), Triggers, Third-party Apps (GFX Tool) are not allowed.",
       "Tiebreakers will be determined based on total times of winning from previous matches.",
       "No team-ups.",
       "Placement Points (Classic): 1st - 10 pts, 2nd - 6 pts, 3rd - 5 pts, 4th - 4 pts, 5th - 3 pts, 6th - 2 pts, 7th-8th - 1 pt, 9th-16th - 0 pts, Per kill - 2 pts.",
-      "Top 4 teams from Round-2 in Classic matches qualify for Round-3 TDM.",
       "Only M416 is allowed in TDM.",
       "In case of ties, a rematch will be conducted in TDM.",
     ],
@@ -277,7 +273,9 @@ export const events: Event[] = [
       "Triggers are not allowed.",
       "Finger sleeves, powder are allowed.",
       "Tiebreakers will be determined based on kill points and position points.",
-      "Top 4 teams will be selected based on the point system in Round 1.",
+      "Round 1: Classic Bermuda (Duo)",
+      "Round 2: Clash Squad (Duo)",
+      "Round 3: Top 4 teams from Round 2",
       "In case of ties, a rematch will be conducted.",
       "Character skills and Gun skins are turned off.",
     ],

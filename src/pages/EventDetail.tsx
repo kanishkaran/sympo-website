@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { events } from '../data/events';
 import { Clock } from 'lucide-react';
 
 export default function EventDetail() {
   const { id } = useParams();
-  const event = events.find(e => e.id === id);
+  const navigate = useNavigate();
+  const event = events.find((e) => e.id === id);
 
   // Refs for DOM elements
   const eventWrapperRef = useRef<HTMLDivElement>(null);
@@ -15,10 +16,8 @@ export default function EventDetail() {
 
   // Animations with GSAP
   useEffect(() => {
-    // Scroll to top on component mount
     window.scrollTo(0, 0);
 
-    // Animate the event wrapper
     if (eventWrapperRef.current) {
       gsap.fromTo(
         eventWrapperRef.current,
@@ -27,7 +26,6 @@ export default function EventDetail() {
       );
     }
 
-    // Animate the event title
     if (eventTitleRef.current) {
       gsap.fromTo(
         eventTitleRef.current,
@@ -35,7 +33,7 @@ export default function EventDetail() {
           opacity: 0,
           x: -100,
           rotation: -10,
-          transformOrigin: 'left center'
+          transformOrigin: 'left center',
         },
         {
           opacity: 1,
@@ -48,13 +46,12 @@ export default function EventDetail() {
             start: 'top center',
             end: 'bottom top',
             scrub: true,
-            markers: false
-          }
+            markers: false,
+          },
         }
       );
     }
 
-    // Animate slots
     slotRefs.current.forEach((slot, index) => {
       if (slot) {
         gsap.fromTo(
@@ -78,6 +75,14 @@ export default function EventDetail() {
       </div>
     );
   }
+
+  const handleJoinClick = () => {
+    if (event.type === 'workshop') {
+      navigate('/workshop');
+    } else {
+      window.open('https://shorturl.at/CVF4K', '_blank');
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-16" ref={eventWrapperRef}>
@@ -145,18 +150,17 @@ export default function EventDetail() {
           </div>
 
           {/* Responsive Join Button */}
-            <div className="mt-8">
-              <button
-                onClick={() => window.open('https://forms.gle/your-google-form-link', '_blank')}
-                className="w-full py-3 px-6 rounded-lg text-lg font-semibold text-white 
+          <div className="mt-8">
+            <button
+              onClick={handleJoinClick}
+              className="w-full py-3 px-6 rounded-lg text-lg font-semibold text-white 
                           bg-gradient-to-r from-blue-500 to-blue-700 
                           hover:from-blue-600 hover:to-blue-800 
                           transition duration-300"
-              >
-                Join Event
-              </button>
-            </div>
-
+            >
+              Join Event
+            </button>
+          </div>
         </div>
       </div>
     </div>
