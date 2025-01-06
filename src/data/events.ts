@@ -14,8 +14,8 @@ export const events: Event[] = [
       'Originality, Creativity and Presentation Skills will be Awarded'
     ],
     coordinators: [
-      { name: 'Naga Arjun', phone: '+91 8825676844' },
-      { name: 'Athirai', phone: '+91 8098437659' },
+      { name: 'Naga Arjun V', phone: '+91 8825676844' },
+      { name: 'Athirai S', phone: '+91 8098437659' },
     ],
     slots: ['10:00 AM - 12:00 PM', '1:00 PM - 2:30 PM'], // Added slot timings
   },
@@ -34,8 +34,8 @@ export const events: Event[] = [
       'Misconduct leads to disqualification.',
     ],
     coordinators: [
-      { name: 'Trisha', phone: '+91 8939321031' },
-      { name: 'Dhanush', phone: '+91 7339483368' },
+      { name: 'Trisha B', phone: '+91 8939321031' },
+      { name: 'Dhanush S', phone: '+91 7339483368' },
     ],
     slots: ['10:00 AM - 12:00 PM'],
   },
@@ -55,8 +55,8 @@ export const events: Event[] = [
       'Misconduct: Misconduct/malpractice will lead to disqualification.',
     ],
     coordinators: [
-      { name: 'Kezia', phone: '+91 98843 00863' },
-      { name: 'Shreeram', phone: '+91 70109 21617' },
+      { name: 'Kezia Sona Francisca M A', phone: '+91 98843 00863' },
+      { name: 'Shreeram T', phone: '+91 70109 21617' },
     ],
     slots: ['10:00 AM - 11:30 AM', '1:00 PM - 2:30 PM'],
   },
@@ -144,8 +144,8 @@ export const events: Event[] = [
       "Our decision regarding the team evaluation will be final.",
     ],
     coordinators: [
-      { name: "Prithi Prasanna.P", phone: "+91 7904185295" },
-      { name: "Ari Prasanna.T", phone: "+91 6374719024" },
+      { name: "Prithi Prasanna P", phone: "+91 7904185295" },
+      { name: "Ari Prasanna T", phone: "+91 6374719024" },
     ],
     type: "non-technical",
     slots: ["10:00 AM to 3:00 PM"],
@@ -209,8 +209,8 @@ export const events: Event[] = [
       "Exceeding the time limit results in a point deduction."
     ],
     coordinators: [
-      { name: "Jerusha.C.R", phone: "+91 7904665930" },
-      { name: "Gowtham.S", phone: "+91 9345713707" },
+      { name: "Jerusha C R", phone: "+91 7904665930" },
+      { name: "Gowtham S", phone: "+91 9345713707" },
     ],
     type: "non-technical",
     slots: ["12:30 PM - 2:30 PM"],
@@ -232,8 +232,8 @@ export const events: Event[] = [
       "Have fun and give it your best shot!",
     ],
     coordinators: [
-      { name: "Sivaksha Sivagami.A.P", phone: "+91 7604997897" },
-      { name: "Praveen Kumar.S", phone: "+91 9444552899" },
+      { name: "Sivaksha Sivagami A P", phone: "+91 7604997897" },
+      { name: "Praveen Kumar S", phone: "+91 9444552899" },
     ],
     type: "non-technical",
     slots: ["12:30 PM - 2:30 PM"],
@@ -257,7 +257,7 @@ export const events: Event[] = [
       "Only M416 is allowed in TDM.",
       "In case of ties, a rematch will be conducted in TDM.",
     ],
-    coordinators: [{ name: "Subash", phone: "+91 9884692100" }],
+    coordinators: [{ name: "Subash Krishna S", phone: "+91 9884692100" }],
     type: "non-technical",
     slots: ["10:00 AM to 12:00 PM"],
   },
@@ -279,7 +279,7 @@ export const events: Event[] = [
       "In case of ties, a rematch will be conducted.",
       "Character skills and Gun skins are turned off.",
     ],
-    coordinators: [{ name: "Manish", phone: "+91 9150272747" }],
+    coordinators: [{ name: "Manish G", phone: "+91 9150272747" }],
     type: "non-technical",
     slots: ["10:00 AM to 12:00 PM"],
   }  

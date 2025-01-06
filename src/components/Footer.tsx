@@ -3,25 +3,25 @@ import { YoutubeIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 export default function Footer() {
   const coordinators = [
     {
-      name: "Charan",
+      name: "Charan K",
       role: "Student Coordinator",
       phone: "+91 99949 23310",
       email: "charankesavanm@gmail.com",
     },
     {
-      name: "Jasmine",
+      name: "Jasmine Rennita V",
       role: "Student Coordinator",
       phone: "+91 79045 23860",
       email: "jasminerennita15403@gmail.com",
     },
     {
-      name: "Kanishkaran",
+      name: "Kanishkaran M",
       role: "Student Coordinator",
       phone: "+91 63745 38518",
       email: "kanishkaran456@gmail.com",
     },
     {
-      name: "Keerthana",
+      name: "Keerthana S",
       role: "Student Coordinator",
       phone: "+91 88387 86784",
       email: "keerthanas1200@gmail.com",

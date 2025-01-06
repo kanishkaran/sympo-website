@@ -10,31 +10,31 @@ const generalCredits = [
   {
     category: "Student Coordinators",
     members: [
-      "Charan",
+      "Charan K",
       "Jasmine Rennita V",
-      "Kanishkaran",
-      "Keerthana",
+      "Kanishkaran M",
+      "Keerthana S",
     ],
     icon: Users,
   },
   {
     category: "Committee Leads",
-    members: ["Aparna K", "Jagadeesh"],
+    members: ["Aparna K", "Jagadeesh M"],
     icon: ClipboardCheck,
   },
   {
     category: "Tech Leads",
-    members: ["Tharun", "Trisha B"],
+    members: ["Tharun E", "Trisha B"],
     icon: Award,
   },
   {
     category: "Non-Tech Leads",
-    members: ["Prithi Prasanna P", "Gowtham"],
+    members: ["Prithi Prasanna P", "Gowtham S"],
     icon: Feather,
   },
   {
     category: "Treasurer",
-    members: ["Prabhakar "],
+    members: ["Prabhakar V"],
     icon: PiggyBank,
   },
 ];
