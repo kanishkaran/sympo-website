@@ -4,12 +4,12 @@ import { Star, Users, ClipboardCheck, Award, Feather, PiggyBank, UserCircle } fr
 const generalCredits = [
   {
     category: "Head of the Department (AI & DS)",
-    members: ["Dr. P.Visu"],
+    members: ["Dr. Visu P"],
     icon: UserCircle,
   },
   {
     category: "Staff Coordinator",
-    members: ["Rajasuganya P.V"],
+    members: ["Mrs. Rajasuganya P.V"],
     icon: Star,
   },
   {
@@ -45,18 +45,18 @@ const generalCredits = [
 ];
 
 const committeeCredits = [
-  { committee: "Documentation", members: ["Prithi Prasanna", "Jasmine"] },
-  { committee: "Food", members: ["Aparna"] },
-  { committee: "Registration & Tag Distribution", members: ["Sumisha", "Swetha", "Rahul", "Dhanush"] },
-  { committee: "Certification", members: ["Dharunikha"] },
-  { committee: "Editing", members: ["Dhanushkodi", "Rakesh", "Vishal"] },
-  { committee: "Marketing", members: ["Parnika", "Lekha"] },
-  { committee: "Decoration", members: ["Kezia", "Sumisha", "Madesh", "Pranov"] },
-  { committee: "Sponsorship", members: ["Pranav G", "Parnika R", "Kezia"] },
-  { committee: "Photography", members: ["Vishal Raj"] },
-  { committee: "Social Media", members: ["Charan", "Parnika", "Aparna"] },
-  { committee: "Hospitality", members: ["Juniors"] },
-  { committee: "Stall", members: ["Naveen M"] },
+  { committee: "Canvasing Committee", members: ["Jeffrey Terrance Daniel", "Charan K", "Jasmine Rennita V"] },
+  { committee: "Certification Committee", members: ["Dharunikha N"] },
+  { committee: "Decoration Committee", members: ["Kezia Sona Francisca M A", "Sumisha D", "Madesh Pon Durai S I", "Pranov L"] },
+  { committee: "Documentation Committee", members: ["Charan K", "Jasmine Rennita V"] },
+  { committee: "Editing Committee", members: ["Dhanush Kodi S"] },
+  { committee: "Food Committee", members: ["Aparna K", "Athiqur Raasith M S"] },
+  { committee: "Hospitality Committee", members: ["Aparna K", "Jagadeesh M"] },
+  { committee: "Marketing Committee", members: ["Parnika R", "Lekha S", "Gowtham S"] },
+  { committee: "Photography Committee", members: ["Vishal Raj T", "Rakesh M"] },
+  { committee: "Registration Committee", members: ["Sumisha D", "Swetha R", "Rahul A", "Dhanush S"] },
+  { committee: "Sponsorship Committee", members: ["Pranav Kumar G", "Parnika R", "Kezia Sona Francisca M A"] },
+  { committee: "Stall Committee", members: ["Pranav Kumar G", "Pranov L", "Bharath P R"] },
 ];
 
 export default function Credits() {
