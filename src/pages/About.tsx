@@ -1,5 +1,13 @@
 
 export default function About() {
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/brochure.pdf"; // Path to your PDF
+    link.download = "Brochure.pdf";
+    link.click();
+  };
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-navy to-blue-900 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
@@ -25,7 +33,7 @@ export default function About() {
               <li>Engaging <span className="text-blue-300">Technical Competitions</span> to showcase your skills.</li>
               <li>Creative <span className="text-blue-300">Non-Technical Activities</span> for fun and bonding.</li>
               <li>Exclusive <span className="text-blue-300">Workshops</span> led by industry experts.</li>
-              <li>A vibrant platform with <span className="text-blue-300">500+ participants</span> from across the region.</li>
+              <li>A vibrant platform with <span className="text-blue-300">numerous participants</span> from across the region.</li>
             </ul>
           </div>
 
@@ -39,12 +47,12 @@ export default function About() {
 
           {/* Call to Action Section */}
           <div className="flex flex-col items-center">
-            <button
-              onClick={() => window.open("https://shorturl.at/CVF4K", "_blank")}
-              className="bg-gradient-to-r from-blue-500 to-yellow-500 text-navy px-6 py-3 rounded-md font-bold text-lg hover:opacity-90 transition shadow-lg"
-            >
-              Join Us and Be Part of the Innovation
-            </button>
+          <button
+            onClick={handleDownload}
+            className="bg-gradient-to-r from-[#314755] to-[#26a0da] bg-200 hover:bg-position-right text-white px-6 py-3 rounded-md font-bold text-lg shadow-lg transition-all duration-500"
+          >
+            Download Brochure
+          </button>
             <p className="text-sm text-gray-300 mt-4">
               Don’t miss this opportunity to connect, compete, and create!
             </p>

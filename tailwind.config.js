@@ -19,7 +19,13 @@ export default {
         'gold-gradient': 'linear-gradient(135deg, #FFD700 0%, #FDB347 100%)',
         'navy-gradient': 'linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%)',
         'light-gradient': 'linear-gradient(to bottom, #F8FAFC, #EFF6FF)',
-      }
+      },
+      backgroundSize: {
+        200: '200% auto', // For smooth hover transitions
+      },
+      backgroundPosition: {
+        'position-right': 'right center', // Hover animation position
+      },
     },
   },
   plugins: [],

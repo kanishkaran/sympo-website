@@ -74,14 +74,6 @@ export default function Footer() {
         <div className="text-center mt-8 pt-6 border-t border-gray-700">
           <div className="flex flex-wrap justify-center gap-4 mt-4">
             <a
-              href="https://www.youtube.com/@COGNEBULA2K24"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-gradient-to-r from-red-500 to-pink-500 rounded-full shadow-lg hover:scale-110 transition-all"
-            >
-              <YoutubeIcon className="text-white h-8 w-8 sm:h-10 sm:w-10" />
-            </a>
-            <a
               href="https://www.instagram.com/cognebula_2k25/"
               target="_blank"
               rel="noopener noreferrer"
