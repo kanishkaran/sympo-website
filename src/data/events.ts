@@ -148,7 +148,7 @@ export const events: Event[] = [
       { name: "Ari Prasanna T", phone: "+91 6374719024" },
     ],
     type: "non-technical",
-    slots: ["10:00 AM to 3:00 PM"],
+    slots: ["10:00 AM to 2:30 PM"],
   },
   {
     id: "Teasure Hunt",
@@ -192,7 +192,7 @@ export const events: Event[] = [
       { name: "Preethi Varthini A", phone: "+91 6369715637" },
     ],
     type: "non-technical",
-    slots: ["10:00 AM – 12:00 PM"],
+    slots: ["10:00 AM – 12:00 PM", "12:45 PM - 2:30 PM"],
   },
   {
     id: "Spotlight",
@@ -213,7 +213,7 @@ export const events: Event[] = [
       { name: "Gowtham S", phone: "+91 9345713707" },
     ],
     type: "non-technical",
-    slots: ["12:30 PM - 2:30 PM"],
+    slots: ["12:45 PM - 2:30 PM"],
   },
   {
     id: "Recall Quest",
@@ -236,7 +236,7 @@ export const events: Event[] = [
       { name: "Praveen Kumar S", phone: "+91 81248 22669" },
     ],
     type: "non-technical",
-    slots: ["12:30 PM - 2:30 PM"],
+    slots: ["10:00 AM - 12:00 PM", "12:45 PM - 2:30 PM"],
   },
   {
     id: "BGMI",
