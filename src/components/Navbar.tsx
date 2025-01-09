@@ -42,13 +42,6 @@ export default function Navbar() {
     }
   }, [isOpen]);
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/brochure.pdf"; // Path to your PDF file
-    link.download = "Brochure.pdf";
-    link.click();
-  };
-
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -121,7 +114,7 @@ export default function Navbar() {
               Register Now
             </button>
             <button
-              onClick={handleDownload}
+              onClick={() => window.open('/brochure.pdf', '_blank')}
               className="bg-gradient-to-r from-[#314755] to-[#26a0da] bg-200 hover:bg-position-right text-white/90 px-4 py-2 rounded-lg font-semibold text-sm lg:text-base shadow-lg transition-all duration-500"
             >
               Download Brochure
@@ -200,10 +193,7 @@ export default function Navbar() {
             Register Now
           </button>
           <button
-          onClick={() => {
-            setIsOpen(false);
-            handleDownload();
-          }}
+          onClick={() => window.open('/brochure.pdf', '_blank')}
           className="bg-gradient-to-r from-[#314755] to-[#26a0da] bg-200 hover:bg-position-right text-white/90 px-4 py-2 rounded-md font-semibold text-sm shadow-md transition-all duration-500"
         >
           Download Brochure

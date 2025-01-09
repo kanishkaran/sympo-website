@@ -1,12 +1,6 @@
 
 export default function About() {
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/brochure.pdf"; // Path to your PDF
-    link.download = "Brochure.pdf";
-    link.click();
-  };
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-navy to-blue-900 text-white py-12 px-6">
@@ -48,7 +42,7 @@ export default function About() {
           {/* Call to Action Section */}
           <div className="flex flex-col items-center">
           <button
-            onClick={handleDownload}
+            onClick={() => window.open('/brochure.pdf', '_blank')}
             className="bg-gradient-to-r from-[#314755] to-[#26a0da] bg-200 hover:bg-position-right text-white px-6 py-3 rounded-md font-bold text-lg shadow-lg transition-all duration-500"
           >
             Download Brochure
