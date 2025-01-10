@@ -188,7 +188,7 @@ export const events: Event[] = [
       "Ensure fair play and maintain enthusiasm throughout the event.",
     ],
     coordinators: [
-      { name: "Ishwarya", phone: "+91 7904731364" },
+      { name: "Ishwarya P", phone: "+91 7904731364" },
       { name: "Preethi Varthini A", phone: "+91 6369715637" },
     ],
     type: "non-technical",
