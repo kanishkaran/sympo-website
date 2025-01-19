@@ -5,13 +5,13 @@ export default function Footer() {
     {
       name: "Dr. Visu P",
       role: "Head of Department (AI & DS)",
-      phone: "+91 98840 02675",
+      phone: "",
       email: "hodaids@velammal.edu.in",
     },
     {
       name: "Mrs. Rajasuganya P.V",
       role: "Staff Coordinator",
-      phone: "+91 88700 74413",
+      phone: "",
       email: "rajasuganya@velammal.edu.in",
     },
     {
