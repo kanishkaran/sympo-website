@@ -62,7 +62,7 @@ export const events: Event[] = [
   },
   {
     id: 'sql-detectives',
-    title: 'SQL Detectives',
+    title: 'SQL SPY',
     type: 'technical',
     description:
       'Step into the shoes of a detective and test your SQL skills by solving mysteries using queries. Work solo to uncover clues and prove your expertise!',
@@ -82,7 +82,7 @@ export const events: Event[] = [
   },
   {
     id: 'full-stack-development',
-    title: 'Full Stack Development',
+    title: 'Stack Sprint',
     type: 'technical',
     description:
       'Solve a problem by creating a high-fidelity frontend and an efficient backend. The winner will be the participant who creates the best website or app!',
