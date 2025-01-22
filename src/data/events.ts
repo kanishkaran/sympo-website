@@ -17,7 +17,7 @@ export const events: Event[] = [
       { name: 'Naga Arjun V', phone: '+91 8825676844' },
       { name: 'Athirai S', phone: '+91 8098437659' },
     ],
-    slots: ['10:00 AM - 12:00 PM', '1:00 PM - 2:30 PM'], // Added slot timings
+    slots: ['10:00 AM - 2:30 PM'], // Added slot timings
   },
   {
     id: 'prompt-craft',
