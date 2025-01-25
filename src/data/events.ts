@@ -8,16 +8,16 @@ export const events: Event[] = [
     description: 'Present your research papers / prototype on any technology related topics.',
     rules: [
       'Team size: 2-4 members',
-      'Time limit: 10 minutes presentation + 5 minutes Q&A',
-      'Submit abstract before 24 hours',
+      'In the first round, the top teams will be chosen',
+      'In the second round, the winners will be decided',
       'PowerPoint presentation required',
-      'Originality, Creativity and Presentation Skills will be Awarded'
+      'Participants can either submit just a PowerPoint presentation or submit along with a working model.'
     ],
     coordinators: [
       { name: 'Naga Arjun V', phone: '+91 8825676844' },
       { name: 'Athirai S', phone: '+91 8098437659' },
     ],
-    slots: ['10:00 AM - 2:30 PM'], // Added slot timings
+    slots: ['10:00 AM - 12:00 PM'], // Added slot timings
   },
   {
     id: 'prompt-craft',
@@ -47,9 +47,9 @@ export const events: Event[] = [
       'Team up with a friend to solve problems while swapping roles at regular intervals — only one codes at a time, with the final collaboration allowing both to code together!',
     rules: [
       'Team size: 2 members',
-      'Platform: Conducted on a competitive coding platform (Hackerrank; account required for registration).',
-      'Coding & Idle Roles: One teammate codes while the other sits idle/work it out on paper (no talking between members until the last swap).',
-      'Roles swap every 10 minutes (4 swaps in total).',
+      'Platform: Conducted on a competitive coding platform (Hackerrank; account required for registration)',
+      'Coding & Idle Roles: One teammate codes while the other sits idle/work it out on paper (no talking between members until the last swap)',
+      'Roles swap every few minutes',
       'Final Collaboration: For the last swap, both teammates can communicate and code together.',
       'Evaluation: Time complexity of code will be the tiebreaker if teams finish at the same time.',
       'Misconduct: Misconduct/malpractice will lead to disqualification.',
@@ -68,11 +68,10 @@ export const events: Event[] = [
       'Step into the shoes of a detective and test your SQL skills by solving mysteries using queries. Work solo to uncover clues and prove your expertise!',
     rules: [
       'Team size: 1-2 members',
-      'Solve mysteries by querying a pre-loaded database.',
+      'Solve mysteries by querying the given database.',
       'Strictly no external resources allowed.',
       'Misconduct leads to disqualification.',
       'Prizes for winners who crack the case fastest and most efficiently!',
-      'Coordinators decisions are final.',
     ],
     coordinators: [
       { name: 'Ranjith Kumar R', phone: '+91 6380875936' },
@@ -88,9 +87,9 @@ export const events: Event[] = [
       'Solve a problem by creating a high-fidelity frontend and an efficient backend. The winner will be the participant who creates the best website or app!',
     rules: [
       'Team size: 1-2 members.',
-      'All project work must be original and developed during the competition.',
+      'All project work must be developed during the competition.',
       'Participants may use pre-built libraries, frameworks, and AI tools (e.g., ChatGPT, GitHub Copilot, OpenAI APIs) but must declare their usage.',
-      'Any plagiarism will result in immediate disqualification.',
+      'Participants can refer the internet to create the application/website.',
       'Originality and creativity of the solution are an advantage.',
       'The application must meet the requirements of the theme/problem statement.',
     ],
