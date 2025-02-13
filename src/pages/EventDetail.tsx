@@ -1,12 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { events } from '../data/events';
 import { Clock } from 'lucide-react';
 
 export default function EventDetail() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const event = events.find((e) => e.id === id);
 
   // Refs for DOM elements
@@ -76,13 +75,6 @@ export default function EventDetail() {
     );
   }
 
-  const handleJoinClick = () => {
-    if (event.type === 'workshop') {
-      navigate('/workshop');
-    } else {
-      window.open('https://shorturl.at/CVF4K', '_blank');
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gray-50 py-16" ref={eventWrapperRef}>
@@ -152,13 +144,12 @@ export default function EventDetail() {
           {/* Responsive Join Button */}
           <div className="mt-8">
             <button
-              onClick={handleJoinClick}
               className="w-full py-3 px-6 rounded-lg text-lg font-semibold text-white 
                           bg-gradient-to-r from-blue-500 to-blue-700 
                           hover:from-blue-600 hover:to-blue-800 
                           transition duration-300"
             >
-              Join Event
+              Registrations Closed!
             </button>
           </div>
         </div>

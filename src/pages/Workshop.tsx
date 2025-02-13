@@ -151,10 +151,9 @@ export default function Workshop() {
           variants={sectionVariants}
         >
           <button
-            onClick={() => window.open("https://forms.gle/bu2SDHqFmvj6CwVa6", "_blank")}
             className="inline-block bg-gradient-to-r from-gold to-gold-light text-navy px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-opacity shadow-lg"
           >
-            Register for Workshop
+            Registerations Closed!
           </button>
           <p className="text-white/70 mt-4">
             Limited seats available. Early bird registrations get special benefits!

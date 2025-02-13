@@ -58,10 +58,9 @@ export default function Home() {
               <CountdownTimer />
             </div>
             <button
-              onClick={() => window.open("https://shorturl.at/CVF4K", "_blank")}
               className="bg-gradient-to-r from-blue-500 to-yellow-500 text-navy px-6 py-2 sm:px-8 sm:py-3 rounded-md font-bold text-sm sm:text-lg hover:opacity-90 transition shadow-lg"
             >
-              Register Now
+              Registerations Closed!
             </button>
           </div>
         </div>

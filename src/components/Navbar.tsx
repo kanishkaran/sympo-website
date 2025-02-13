@@ -108,10 +108,9 @@ export default function Navbar() {
               Credits
             </Link>
             <button
-              onClick={() => window.open("https://shorturl.at/CVF4K", "_blank")}
               className="bg-gradient-to-r from-yellow-500 to-blue-700 text-navy px-4 py-2 rounded-lg font-semibold text-sm lg:text-base hover:opacity-90 transition shadow-lg"
             >
-              Register Now
+              Registerations Closed!
             </button>
             <button
               onClick={() => window.open('/brochure.pdf', '_blank')}
@@ -184,13 +183,9 @@ export default function Navbar() {
             Credits
           </Link>
           <button
-            onClick={() => {
-              setIsOpen(false);
-              window.open("https://shorturl.at/CVF4K", "_blank");
-            }}
             className="bg-gradient-to-r from-yellow-500 to-blue-700 text-navy px-4 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition shadow-md"
           >
-            Register Now
+            Registrations Closed
           </button>
           <button
           onClick={() => window.open('/brochure.pdf', '_blank')}
